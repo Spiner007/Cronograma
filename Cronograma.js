@@ -5,7 +5,7 @@ window.onload = function () {
   const cells = document.querySelectorAll('table td');
 
   const backgroundImage = new Image();
-  backgroundImage.src = '/imagenes/difinitio.jpg';
+  backgroundImage.src = 'imagenes/difinitio.jpg';
   const maximoTiempo = 3000;
 
   let imagenCargada = false;

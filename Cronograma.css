@@ -1,4 +1,4 @@
-/*Fondo de carga de la pagina*/
+
 
 .fondoDeCarga {
     position: fixed;
@@ -45,7 +45,7 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #f0f8ff;
-    background-image: url('/imagenes/difinitio.jpg');
+    background-image: url('imagenes/difinitio.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ body {
     transform: translateX(-50%);
     width: 160px;
     height: 125px;
-    background-image: url('/imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
+    background-image: url('imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
     background-size: cover;
     background-position: center;
 }
