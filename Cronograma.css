@@ -53,6 +53,7 @@ body {
     flex-direction: column;
 }
 
+/* Logo que se muestra en modo vertical */
 .circle-image {
     position: absolute;
     top: 5px;
@@ -63,6 +64,14 @@ body {
     background-image: url('imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
     background-size: cover;
     background-position: center;
+    display: block;  /* Mostrar el logo por defecto */
+}
+
+/* Cuando el dispositivo está en modo horizontal (landscape), ocultar el logo */
+@media (orientation: landscape) {
+    .circle-image {
+        display: none;
+    }
 }
 
 h1 {
@@ -120,7 +129,6 @@ tr:hover {
     background-color: #ddd;
 }
 
-
 @media (max-width: 480px) {
     body {
         background-size: cover;
@@ -147,6 +155,3 @@ tr:hover {
         padding: 8px;
     }
 }
-
-
-

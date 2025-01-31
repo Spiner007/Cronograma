@@ -1,28 +1,43 @@
-function forzarVistaMovil() {
-    // 1. Cambiar el viewport para simular un móvil
-    let meta = document.querySelector("meta[name=viewport]");
-    if (meta) {
-        meta.setAttribute("content", "width=375, user-scalable=no"); // Simula un móvil
-    } else {
-        meta = document.createElement("meta");
-        meta.name = "viewport";
-        meta.content = "width=375, user-scalable=no";
-        document.head.appendChild(meta);
-    }
-
-    // 2. Recargar la página para aplicar los cambios
-    setTimeout(() => {
-        location.reload();
-    }, 500);
-}
-
-// Detectar si el usuario está en "Modo Escritorio" y aplicar la función
 window.onload = function () {
-    const esModoEscritorio = navigator.userAgent.toLowerCase().includes("android") &&
-                             navigator.userAgent.toLowerCase().includes("chrome") &&
-                             !navigator.userAgent.toLowerCase().includes("mobile");
+  // Verificar si el usuario está en un dispositivo móvil
+  if (window.innerWidth > 800) {
+    // Redirigir a la versión móvil si el tamaño de la pantalla es mayor a 800px (es decir, un dispositivo de escritorio)
+    window.location.replace("https://www.tusitio.com/movil-version"); // Reemplaza la URL con la dirección correcta
+  }
 
-    if (esModoEscritorio) {
-        forzarVistaMovil(); // Llama a la función para cambiar a móvil
+  const preCargar = document.getElementById('fondoDeCarga');
+  const contenedor = document.getElementById('progresoDelCirculo');
+  const cells = document.querySelectorAll('table td');
+
+  const backgroundImage = new Image();
+  backgroundImage.src = 'imagenes/difinitio.jpg';
+  const maximoTiempo = 3000;
+
+  let imagenCargada = false;
+
+  // Cargar imagen
+  backgroundImage.onload = function () {
+    imagenCargada = true;
+
+    if (preCargar) preCargar.style.display = 'none';
+    if (contenedor) contenedor.style.display = 'block';
+  };
+
+  // Si la imagen no se carga a tiempo
+  setTimeout(() => {
+    if (!imagenCargada) {
+      if (preCargar) preCargar.style.display = 'none';
+      if (contenedor) contenedor.style.display = 'block';
     }
+  }, maximoTiempo);
+
+  // Función de alerta
+  function Alert() {
+    alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
+  }
+
+  // Añadir evento de click a las celdas
+  cells.forEach(function (cell) {
+    cell.addEventListener('click', Alert);
+  });
 };
