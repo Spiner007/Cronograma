@@ -1,10 +1,5 @@
 window.onload = function () {
-  // Verificar si el usuario está en un dispositivo móvil
-  if (window.innerWidth > 800) {
-    // Redirigir a la versión móvil si el tamaño de la pantalla es mayor a 800px (es decir, un dispositivo de escritorio)
-    window.location.replace("https://www.tusitio.com/movil-version"); // Reemplaza la URL con la dirección correcta
-  }
-
+  
   const preCargar = document.getElementById('fondoDeCarga');
   const contenedor = document.getElementById('progresoDelCirculo');
   const cells = document.querySelectorAll('table td');
