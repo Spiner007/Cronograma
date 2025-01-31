@@ -149,8 +149,4 @@ tr:hover {
 }
 
 
-@media (min-width: 801px) {
-    body {
-        display: none; 
-    }
-}
+
