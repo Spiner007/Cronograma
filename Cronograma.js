@@ -1,9 +1,20 @@
 window.onload = function () {
- 
-  if (window.innerWidth > 800) {
-    
-    window.location.replace("https://spiner007.github.io/Cronograma/"); 
+
+  function checkWindowSize() {
+    if (window.innerWidth > 800) {
+
+      console.log("Modo Escritorio activado");
+    } else {
+     
+      console.log("Modo Móvil activado");
+    }
   }
+
+ 
+  checkWindowSize();
+
+  
+  window.addEventListener('resize', checkWindowSize);
 
   const preCargar = document.getElementById('fondoDeCarga');
   const contenedor = document.getElementById('progresoDelCirculo');
@@ -15,6 +26,7 @@ window.onload = function () {
 
   let imagenCargada = false;
 
+
   backgroundImage.onload = function () {
     imagenCargada = true;
 
@@ -22,6 +34,7 @@ window.onload = function () {
     if (contenedor) contenedor.style.display = 'block';
   };
 
+  
   setTimeout(() => {
     if (!imagenCargada) {
       if (preCargar) preCargar.style.display = 'none';
@@ -29,12 +42,12 @@ window.onload = function () {
     }
   }, maximoTiempo);
 
- 
+
   function Alert() {
     alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
   }
 
-
+ 
   cells.forEach(function (cell) {
     cell.addEventListener('click', Alert);
   });
