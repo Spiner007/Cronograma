@@ -1,3 +1,4 @@
+./* Fondo de carga */
 .fondoDeCarga {
     position: fixed;
     top: 0;
@@ -22,13 +23,8 @@
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .mensajeDeCarga {
@@ -37,6 +33,7 @@
     color: #555555;
 }
 
+/* Ajuste general */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -53,7 +50,7 @@ body {
     flex-direction: column;
 }
 
-/* Logo que se muestra en modo vertical */
+/* Logo */
 .circle-image {
     position: absolute;
     top: 5px;
@@ -64,28 +61,23 @@ body {
     background-image: url('imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
     background-size: cover;
     background-position: center;
-    display: block;  /* Mostrar el logo por defecto */
 }
 
-/* Cuando el dispositivo está en modo horizontal (landscape), ocultar el logo */
-@media (orientation: landscape) {
-    .circle-image {
-        display: none;
-    }
-}
-
+/* Texto */
 h1 {
     color: #003366;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    font-size: 1.8em;
 }
 
 .date-range {
-    font-size: 18px;
+    font-size: 1.2em;
     color: #ffffff;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Contenedor de la tabla */
 .table-container {
     width: 100%;
     display: flex;
@@ -94,9 +86,10 @@ h1 {
     overflow-x: auto;
 }
 
+/* Tabla responsiva */
 table {
-    width: 90%;
-    max-width: 600px;
+    width: 95%;
+    max-width: 700px; /* Se aumenta para escritorio */
     border-collapse: collapse;
     background: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -104,23 +97,26 @@ table {
     overflow: hidden;
 }
 
-th,
-td {
+/* Celdas */
+th, td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 14px;
     text-align: center;
+    font-size: 1em;
 }
 
+/* Encabezados */
 th {
     background-color: #007BFF;
     color: white;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 td {
     cursor: pointer;
 }
 
+/* Colores alternos */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -129,29 +125,53 @@ tr:hover {
     background-color: #ddd;
 }
 
+/* Ajustes para móviles */
 @media (max-width: 480px) {
-    body {
-        background-size: cover;
-    }
-
     h1 {
         font-size: 1.3em;
     }
 
     .date-range {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     .circle-image {
         top: 50px;
+        width: 140px;
+        height: 110px;
     }
 
     table {
-        font-size: 12px;
+        font-size: 0.9em;
+        max-width: 100%;
     }
 
-    th,
-    td {
-        padding: 8px;
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Ajustes para escritorio (pantallas grandes) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5em; /* Aumenta el tamaño del título */
+    }
+
+    .date-range {
+        font-size: 1.5em;
+    }
+
+    .circle-image {
+        width: 200px;
+        height: 150px;
+    }
+
+    table {
+        max-width: 900px; /* Se agranda la tabla */
+        font-size: 1.2em;
+    }
+
+    th, td {
+        padding: 16px;
     }
 }
