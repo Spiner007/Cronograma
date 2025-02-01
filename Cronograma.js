@@ -31,16 +31,27 @@ window.onload = function () {
     alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
   }
 
+
   cells.forEach(function (cell) {
     cell.addEventListener('click', Alert);
   });
 
+ 
   function alertaModoEscritorio() {
     alert("¡Tienes activado el modo escritorio! Para una mejor visualización en tu dispositivo móvil, te recomendamos desactivarlo.");
   }
 
 
-  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && window.innerWidth > 1024) {
-    alertaModoEscritorio();
+  function detectarModoEscritorio() {
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+      if (window.innerWidth > 1024) {
+        alertaModoEscritorio();
+      }
+    }
   }
+
+ 
+  detectarModoEscritorio();
+  window.addEventListener('resize', detectarModoEscritorio);
 };
