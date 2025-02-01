@@ -84,6 +84,47 @@ h1 {
     font-size: 1.8em;
 }
 
+
+
+.apoyo-container {
+    margin-top: 20px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoyo-container table {
+    width: 70%; 
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.apoyo-header th {
+    color: black;
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+
+.apoyo-body td {
+    background-color: #ea00ff; 
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.apoyo-body td:hover {
+    background-color: #c2c0c4;
+}
+
+
+
+
 .date-range {
     font-size: 1.2em;
     color: #ffffff;
@@ -96,7 +137,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: auto;  
+    overflow-y: hidden; 
+    max-height: 90vh; 
 }
 
 table {
@@ -154,11 +197,74 @@ table tr:nth-child(5) {
     color: white;
 }
 
+
+
 table tr:hover {
-    background-color: #ada7a7;
+    background-color: #c2c0c4;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .date-range {
+        font-size: 1.2em;
+    }
+
+    .circle-image {
+        width: 160px;
+        height: 125px;
+    }
+
+    table {
+        max-width: 100%;
+        font-size: 1em;
+    }
+
+    th, td {
+        padding: 14px;
+    }
+}
+
+
+@media (max-width: 542px) {
+    
+   
+    
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .circle-image {
+        top: 30px;
+        width: 140px;
+        height: 110px;
+    }
+
+    table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 385px) {
+    
+    .circle-image {
+        display: none;
+    }
+    
     h1 {
         font-size: 1.3em;
     }
@@ -183,26 +289,35 @@ table tr:hover {
     }
 }
 
-@media (min-width: 1025px) {
+
+
+
+@media (max-width: 321px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+    
+    
     h1 {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     .date-range {
-        font-size: 1.2em;
-    }
-
-    .circle-image {
-        width: 160px;
-        height: 125px;
-    }
-
-    table {
-        max-width: 100%;
         font-size: 1em;
     }
 
+    .circle-image {
+        top: 20px;
+        width: 140px;
+        height: 110px;
+    }
+
+    table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
     th, td {
-        padding: 14px;
+        padding: 10px;
     }
 }
