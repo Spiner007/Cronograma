@@ -122,27 +122,27 @@ td {
 
 
 
-table tr:nth-child(2) {
+table tr:nth-child(1) {
     background-color: #f60202; 
     color: white;
 }
 
-table tr:nth-child(3) {
+table tr:nth-child(2) {
     background-color: #ff5e00; 
     color: white;
 }
 
-table tr:nth-child(4) {
+table tr:nth-child(3) {
     background-color: #ff5771; 
     color: white;
 }
 
-table tr:nth-child(5) {
+table tr:nth-child(4) {
     background-color: #ea00ff; 
     color: white;
 }
 
-table tr:nth-child(6) {
+table tr:nth-child(5) {
     background-color: #7700ff; 
     color: white;
 }
