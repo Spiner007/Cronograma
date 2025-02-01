@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronograma de Recepción</title>
-     <link rel="stylesheet" href="Cronograma.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="Cronograma.css">
 
 </head>
 <body>
@@ -64,6 +65,16 @@
 
         </table>
     </div>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js")
+                .then(reg => console.log("Service Worker registrado"))
+                .catch(err => console.error("Error registrando Service Worker:", err));
+        }
+      </script>
+      
+
 
 <script src="Cronograma.js"></script>
 

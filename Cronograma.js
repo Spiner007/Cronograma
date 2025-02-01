@@ -1,10 +1,5 @@
 window.onload = function () {
   
-  if (window.innerWidth > 800) {
-   
-    window.location.replace("https://spiner007.github.io/Cronograma/"); 
-  }
-
   const preCargar = document.getElementById('fondoDeCarga');
   const contenedor = document.getElementById('progresoDelCirculo');
   const cells = document.querySelectorAll('table td');
