@@ -10,7 +10,7 @@ window.onload = function () {
 
   let imagenCargada = false;
 
-
+  // Cargar imagen
   backgroundImage.onload = function () {
     imagenCargada = true;
 
@@ -18,7 +18,7 @@ window.onload = function () {
     if (contenedor) contenedor.style.display = 'block';
   };
 
-
+  // Si la imagen no se carga a tiempo
   setTimeout(() => {
     if (!imagenCargada) {
       if (preCargar) preCargar.style.display = 'none';
@@ -26,12 +26,12 @@ window.onload = function () {
     }
   }, maximoTiempo);
 
-
+  // Función de alerta
   function Alert() {
     alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
   }
 
-
+  // Añadir evento de click a las celdas
   cells.forEach(function (cell) {
     cell.addEventListener('click', Alert);
   });
