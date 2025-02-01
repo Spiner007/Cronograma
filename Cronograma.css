@@ -1,4 +1,3 @@
-
 .fondoDeCarga {
     position: fixed;
     top: 0;
@@ -23,8 +22,13 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .mensajeDeCarga {
@@ -65,18 +69,16 @@ body {
 }
 
 
-/* Ocultar logo en horizontal */
 @media (orientation: landscape) {
     .circle-image {
         display: none;
     }
 }
 
-/* Títulos y texto */
 h1 {
     color: #003366;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
-    font-size: 1.8em; /* Aumentado para mejor visibilidad */
+    font-size: 1.8em;
 
 }
 
@@ -87,7 +89,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Contenedor de la tabla */
+
 .table-container {
     width: 100%;
     display: flex;
@@ -96,7 +98,7 @@ h1 {
     overflow-x: auto;
 }
 
-/* Tabla responsiva */
+
 table {
     width: 95%;
     border-collapse: collapse;
@@ -106,14 +108,15 @@ table {
     overflow: hidden;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 14px;
     text-align: center;
     font-size: 1em;
 }
 
-/* Encabezados */
+
 th {
     background-color: #007BFF;
     color: white;
@@ -124,7 +127,7 @@ td {
     cursor: pointer;
 }
 
-/* Colores alternos */
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -153,16 +156,17 @@ tr:hover {
         max-width: 100%;
     }
 
-    th, td {
+    th,
+    td {
         padding: 10px;
     }
 }
 
 
-/* Estilos para pantallas más grandes */
+
 @media (min-width: 1025px) {
     h1 {
-        font-size: 2.5em; /* Tamaño mayor en escritorio */
+        font-size: 2.5em;
     }
 
     .date-range {
@@ -175,18 +179,19 @@ tr:hover {
     }
 
     table {
-        max-width: 900px; /* Se agranda la tabla */
+        max-width: 900px;
         font-size: 1.2em;
     }
 
-    th, td {
+    th,
+    td {
         padding: 16px;
     }
 }
-/* Ajustes para escritorio (pantallas grandes) */
+
 @media (min-width: 1025px) {
     h1 {
-        font-size: 2.5em; /* Aumenta el tamaño del título */
+        font-size: 2.5em;
 
     }
 
@@ -200,11 +205,12 @@ tr:hover {
     }
 
     table {
-        max-width: 900px; /* Se agranda la tabla */
+        max-width: 900px;
         font-size: 1.2em;
     }
 
-    th, td {
+    th,
+    td {
         padding: 16px;
     }
 }
