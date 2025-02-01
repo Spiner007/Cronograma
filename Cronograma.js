@@ -1,5 +1,5 @@
 window.onload = function () {
-  
+
   const preCargar = document.getElementById('fondoDeCarga');
   const contenedor = document.getElementById('progresoDelCirculo');
   const cells = document.querySelectorAll('table td');
@@ -35,4 +35,14 @@ window.onload = function () {
   cells.forEach(function (cell) {
     cell.addEventListener('click', Alert);
   });
+
+  // Función para mostrar alerta en dispositivos móviles sobre el modo escritorio activado
+  function alertaModoEscritorio() {
+    alert("¡Estás utilizando el modo escritorio! Para una mejor visualización en tu dispositivo móvil, te recomendamos desactivar esta opción.");
+  }
+
+  // Verificar si el dispositivo es móvil
+  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alertaModoEscritorio();
+  }
 };
