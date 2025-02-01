@@ -62,21 +62,32 @@ body {
 }
 
 @media (orientation: landscape) {
+
     .circle-image {
+
         display: none;
     }
+
     .table-container {
         overflow-x: auto;
         display: block;
+        width: 100%;
+        max-width: 100vw;
     }
+
     table {
-        min-width: 100%;
-        table-layout: fixed;
+        width: 100%;
+        min-width: 600px; 
+        table-layout: auto;
+        overflow-x: scroll;
     }
+
     th, td {
         white-space: nowrap;
+        font-size: 0.9em; 
     }
 }
+
 
 h1 {
     color: #003366;
@@ -290,34 +301,3 @@ table tr:hover {
 }
 
 
-
-
-@media (max-width: 321px) {
-    .table-container {
-        overflow-x: scroll;
-    }
-    
-    
-    h1 {
-        font-size: 1.3em;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .circle-image {
-        top: 20px;
-        width: 140px;
-        height: 110px;
-    }
-
-    table {
-        font-size: 0.9em;
-        max-width: 100%;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-}
