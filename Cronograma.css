@@ -1,3 +1,4 @@
+
 .fondoDeCarga {
     position: fixed;
     top: 0;
@@ -22,13 +23,8 @@
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .mensajeDeCarga {
@@ -37,6 +33,7 @@
     color: #555555;
 }
 
+/* Body */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -53,6 +50,7 @@ body {
     flex-direction: column;
 }
 
+
 .circle-image {
     position: absolute;
     top: 5px;
@@ -66,12 +64,13 @@ body {
     display: block;
 }
 
-/* Aseguramos que la imagen del círculo solo se vea en orientación vertical */
+
 @media (orientation: landscape) {
     .circle-image {
         display: none;
     }
 }
+
 
 h1 {
     color: #003366;
@@ -85,6 +84,7 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 
 .table-container {
     width: 100%;
@@ -103,8 +103,7 @@ table {
     overflow: hidden;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ddd;
     padding: 14px;
     text-align: center;
@@ -112,8 +111,8 @@ td {
 }
 
 th {
-    background-color: #007BFF;
-    color: white;
+    background-color: #19b80e;
+    color: rgb(5, 5, 5);
     font-size: 1.2em;
 }
 
@@ -121,12 +120,36 @@ td {
     cursor: pointer;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+
+
+table tr:nth-child(2) {
+    background-color: #f60202; 
+    color: white;
 }
 
-tr:hover {
-    background-color: #ddd;
+table tr:nth-child(3) {
+    background-color: #ff5e00; 
+    color: white;
+}
+
+table tr:nth-child(4) {
+    background-color: #ff5771; 
+    color: white;
+}
+
+table tr:nth-child(5) {
+    background-color: #ea00ff; 
+    color: white;
+}
+
+table tr:nth-child(6) {
+    background-color: #7700ff; 
+    color: white;
+}
+
+
+table tr:hover {
+    background-color: #ada7a7;
 }
 
 
@@ -140,7 +163,7 @@ tr:hover {
     }
 
     .circle-image {
-        top: 50px;
+        top: 20px;
         width: 140px;
         height: 110px;
     }
@@ -150,8 +173,7 @@ tr:hover {
         max-width: 100%;
     }
 
-    th,
-    td {
+    th, td {
         padding: 10px;
     }
 }
@@ -159,7 +181,7 @@ tr:hover {
 
 @media (min-width: 1025px) {
     h1 {
-        font-size: 1.8em; 
+        font-size: 1.8em;
     }
 
     .date-range {
@@ -169,15 +191,15 @@ tr:hover {
     .circle-image {
         width: 160px;
         height: 125px;
+     
     }
 
     table {
-        max-width: 100%; 
+        max-width: 100%;
         font-size: 1em;
     }
 
-    th,
-    td {
+    th, td {
         padding: 14px;
     }
 }
