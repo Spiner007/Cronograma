@@ -124,7 +124,12 @@ h1 {
     border: 1px solid white;
 }
 
-.apoyo-body:hover {
+.apoyo-body td:hover {
+    
+    background-color: #c2c0c4;
+}
+
+.apoyo-body th:hover {
     background-color: #c2c0c4;
 }
 
