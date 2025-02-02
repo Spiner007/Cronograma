@@ -34,7 +34,7 @@ window.onload = function () {
 
   if (botonUniforme) {
     botonUniforme.addEventListener('click', function () {
-      alert("Martes: Camisa blanca.\nJueves: Camisa blanca.\nSábado: Camisa azul.\nDomingo: Camisa azul.");
+      alert("Uniforme:\n\nMartes: Camisa blanca.\nJueves: Camisa blanca.\nSábado: Camisa azul.\nDomingo: Camisa azul.");
     });
   }
 
