@@ -11,49 +11,56 @@ window.onload = function () {
   let imagenCargada = false;
 
   backgroundImage.onload = function () {
-      imagenCargada = true;
-      if (preCargar) preCargar.style.display = 'none';
-      if (contenedor) contenedor.style.display = 'block';
+    imagenCargada = true;
+    if (preCargar) preCargar.style.display = 'none';
+    if (contenedor) contenedor.style.display = 'block';
   };
 
   setTimeout(() => {
-      if (!imagenCargada) {
-          if (preCargar) preCargar.style.display = 'none';
-          if (contenedor) contenedor.style.display = 'block';
-      }
+    if (!imagenCargada) {
+      if (preCargar) preCargar.style.display = 'none';
+      if (contenedor) contenedor.style.display = 'block';
+    }
   }, maximoTiempo);
 
   function Alert() {
-      alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
+    alert("Recuerda estar 1 hora antes, ¡Gracias por tu colaboración!");
   }
 
 
   cells.forEach(function (cell) {
-      cell.addEventListener('click', Alert);
+    cell.addEventListener('click', Alert);
   });
 
- 
-   
-    if (botonUniforme) {
-      botonUniforme.addEventListener('click', function () {
-          alert("Martes: Camisa blanca.\nJueves: Camisa blanca.\nSábado: Camisa azul.\nDomingo: Camisa azul.");
-      });
+  if (botonUniforme) {
+    botonUniforme.addEventListener('click', function () {
+      alert("Martes: Camisa blanca.\nJueves: Camisa blanca.\nSábado: Camisa azul.\nDomingo: Camisa azul.");
+    });
   }
-
 
   const filaPrincipal = document.querySelector("table tr:nth-child(4)");
   const filaApoyo = document.querySelector(".apoyo-body");
 
   if (filaPrincipal && filaApoyo) {
-      filaPrincipal.addEventListener("mouseenter", function () {
-          filaApoyo.classList.add("hover-aplicado");
-      });
+    filaPrincipal.addEventListener("mouseenter", function () {
+      filaApoyo.classList.add("hover-aplicado");
+    });
 
-      filaPrincipal.addEventListener("mouseleave", function () {
-          filaApoyo.classList.remove("hover-aplicado");
-      });
+    filaPrincipal.addEventListener("mouseleave", function () {
+      filaApoyo.classList.remove("hover-aplicado");
+    });
+
+
+    filaApoyo.addEventListener("mouseenter", function () {
+      filaPrincipal.classList.add("hover-aplicado");
+    });
+
+    filaApoyo.addEventListener("mouseleave", function () {
+      filaPrincipal.classList.remove("hover-aplicado");
+    });
   }
 };
+
 
 
 
