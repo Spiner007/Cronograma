@@ -126,6 +126,13 @@ h1 {
 
 
 
+.apoyo-body:hover td {
+    background-color: #c2c0c4 !important;
+}
+
+
+
+
 
 .date-range {
     font-size: 1.2em;
@@ -202,6 +209,33 @@ table tr:nth-child(5) {
 table tr:hover {
     background-color: #c2c0c4;
 }
+
+.uniforme {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.uniforme:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+.uniforme:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+
+.hover-aplicado td {
+    background-color: #c2c0c4 !important;
+}
+
 
 @media (min-width: 1025px) {
     h1 {
