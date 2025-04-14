@@ -5,7 +5,7 @@ window.onload = function () {
   const botonUniforme = document.getElementById('uniforme');
 
   const backgroundImage = new Image();
-  backgroundImage.src = '../imagenes/cherry-blossom-9530270_1280.jpg';
+  backgroundImage.src = '/imagenes/cherry-blossom-9530270_1280.jpg';
   const maximoTiempo = 3000;
 
   let imagenCargada = false;
