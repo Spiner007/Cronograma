@@ -36,6 +36,401 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #f0f8ff;
+    background-image: url('imagenes/cherry-blossom-9530270_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.circle-image {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 125px;
+    background-image: url('imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+@media (orientation: landscape) {
+    .circle-image {
+        display: none;
+    }
+
+    body {
+        display: block;
+        height: auto;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        display: block;
+    }
+    table {
+        min-width: 100%;
+        table-layout: fixed;
+    }
+    th, td {
+        white-space: nowrap;
+    }
+}
+
+h1 {
+    color: #011e3b;
+    text-shadow: 2px 2px 4px rgba(148, 143, 143, 0.6);
+    font-size: 1.8em;
+}
+
+
+
+
+.apoyo-container {
+    margin-top: 20px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoyo-container table {
+    width: 70%; 
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.apoyo-header th {
+    color: black;
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+
+.apoyo-body td {
+    background-color: #737272; 
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+
+
+.apoyo-body:hover td {
+    background-color: #675e5e;;
+}
+
+
+
+
+.date-range {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 1em;
+}
+
+th {
+    background-color: rgb(252, 114, 2);
+    color: rgb(5, 5, 5);
+    font-size: 1.2em;
+}
+
+td {
+    cursor: pointer;
+}
+
+thead {
+    display: table-header-group;
+}
+
+table tr:nth-child(1) {
+    background-color: #424141fb; 
+    color: white;
+}
+
+table tr:nth-child(2) {
+    background-color: #737272; 
+    color: white;
+}
+
+table tr:nth-child(3) {
+    background-color: #424141fb;
+    color: white;
+}
+
+table tr:nth-child(4) {
+    background-color: #737272; 
+    color: white;
+}
+
+table tr:nth-child(5) {
+    background-color: #424141fb; 
+    color: white;
+}
+
+
+
+
+table tr:hover {
+    background-color: #675e5e;
+}
+
+
+.hover-aplicado td {
+    background-color: #675e5e !important;
+}
+
+
+.botones-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dia-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+}
+
+.dia-boton {
+    background-color: rgb(32, 36, 41);
+    color: #ffffff;
+    border: 2px solid #007bff;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dia-boton:hover {
+    background-color: rgb(32, 36, 41);
+    color: white;
+   
+}
+
+
+
+
+.camisa-texto {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 45%;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+
+.dia-container .camisa-texto.mostrar {
+    display: block;
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .date-range {
+        font-size: 1.2em;
+    }
+
+    .circle-image {
+        width: 160px;
+        height: 125px;
+    }
+
+    table {
+        max-width: 100%;
+        font-size: 1em;
+    }
+
+    th, td {
+        padding: 14px;
+    }
+}
+
+
+@media (max-width: 542px) {
+    .circle-image {
+       
+        margin-top: -20px;
+    }
+    
+    
+   
+    
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .circle-image {
+        top: 30px;
+        width: 140px;
+        height: 110px;
+    }
+
+    table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+
+    .dia-boton {
+        font-size: 12px;
+        padding: 8px 15px;
+        border-radius: 6px;
+    }
+    .botones-container {
+        gap: 10px;
+    }
+}
+
+
+
+
+
+@media (max-width: 385px) {
+    
+    .circle-image {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .circle-image {
+        top: 20px;
+        width: 140px;
+        height: 110px;
+    }
+
+    table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .dia-boton {
+        font-size: 12px;
+        padding: 8px 15px;
+        border-radius: 6px;
+    }
+    .botones-container {
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.fondoDeCarga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.progresoDelCirculo {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mensajeDeCarga {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555555;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
     background-image: url('imagenes/himalayas-2301040_1280.jpg');
     background-size: cover;
     background-position: center;
