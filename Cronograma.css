@@ -498,7 +498,7 @@ h1 {
     }
 
     .date-range {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .musicO, .dia-container {
@@ -517,6 +517,7 @@ h1 {
         }
     }
 
+   
 
 
 @media (min-width: 326px) and (max-width: 385px) {
