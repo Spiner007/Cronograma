@@ -471,181 +471,74 @@ h1 {
 
 
 
-@media (min-width: 1025px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    table {
-        width: 80%;
-    }
-
-    .uniforme-boton {
-        font-size: 20px;
-        padding: 14px 24px;
-    }
-
-}
-
-  
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    .uniforme-boton {
-        font-size: 14px;
-        padding: 10px 16px;
-    }
-
-    table {
-        width: 100%;
-        font-size: 0.9em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-
-    h1 {
-        font-size: 1.6em;
-    }
-
-    table {
-        width: 85%;
-    }
-
-    .uniforme-boton {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
-
-    .musicO{
-        right: 18px;
-    }
-    
-    .dia-container {
-        right: 18px;
-    }
-    
-}
-
-
-
-@media (min-width: 542px) and (max-width: 767px) {
-    h1 {
-        font-size: 1.4em;
-    }
-
-    .uniforme-boton {
-        font-size: 16px;
-        padding: 10px 18px;
-    }
-
-
-    .table-container {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    
-
-    table {
-        width: 90%;
-
-    }
- 
-
-    .musicO{
-        right: 12px;
-    }
-    
-    .dia-container {
-        right: 12px;
-    }
-    
-}
-
-
-@media (max-width: 540px) {
+@media (max-width: 325px) {
     .circle-image {
         display: none;
     }
     h1 {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
     .uniforme-boton {
-        font-size: 14px;
-        padding: 10px 16px;
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .table-container {
+        padding: 10px;
     }
 
     table {
         width: 90%;
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
-    .table-container {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    
-      
-    
-
     th, td {
-        padding: 10px;
+        padding: 6px;
     }
 
     .date-range {
-        font-size: 1em;
-    }
- 
-    .musicO{
-        right: 12px;
-    }
-    
-    .dia-container {
-        right: 12px;
+        font-size: 0.9em;
     }
 
-    
-}
+    .musicO, .dia-container {
+        right: 10px;
+    }
+        .fondo-modal-uniforme {
+            left:10px;
+            width: 94vw;
+            height: 100vh;
+
+           
+          }
+          .camisa-container {
+          gap: 4px;
+          padding: 0;
+        }
+    }
 
 
 
-
-
-
-
-
-@media (max-width: 385px) {
-  
+@media (min-width: 326px) and (max-width: 385px) {
+    .circle-image {
+        display: none;
+    }
     h1 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .uniforme-boton {
-        font-size: 12px;
+        font-size: 11px;
         padding: 8px 14px;
     }
 
     .table-container {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    
+        padding: 10px;
+    }
 
     table {
-        font-size: 0.85em;
         width: 90%;
+        font-size: 0.8em;
     }
 
     th, td {
@@ -656,12 +549,100 @@ h1 {
         font-size: 0.9em;
     }
 
-.musicO{
-    right: 12px;
+    .musicO, .dia-container {
+        right: 12px;
+    }
 }
 
-.dia-container {
-    right: 12px;
+@media (min-width: 386px) and (max-width: 540px) {
+    .circle-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .uniforme-boton {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
 }
 
+
+@media (min-width: 541px) and (max-width: 767px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .uniforme-boton {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .uniforme-boton {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 85%;
+        font-size: 0.95em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 18px;
+    }
 }
