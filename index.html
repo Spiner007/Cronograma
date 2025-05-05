@@ -10,11 +10,24 @@
 </head>
 
 <body>
-
+   
     <div id="fondoDeCarga" class="fondoDeCarga">
-        <div id="progresoDelCirculo" class="progresoDelCirculo"></div>
+        <div class="puntos">
+          <div class="punto"></div>
+          <div class="punto"></div>
+          <div class="punto"></div>
+        </div>
         <p class="mensajeDeCarga">Cargando...</p>
-    </div>
+      </div>
+      
+
+   <!-- Video de fondo -->
+   <video id="videoFondo" autoplay muted loop playsinline>
+    <source src="176198-855206384_medium.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  
+
 
     <div class="circle-image"></div>
 
@@ -51,13 +64,6 @@
                     <td>Gloria Hernadez</td>
                     <td>Juan Ladino</td>
                 </tr>
-               <!-- 
-<tr class="row-5">  
-     <td>Domingo (tarde)</td>  
-     <td>Viviana Tuberquia</td>  
-     <td>David Castaño</td> 
-</tr> 
--->
             </tbody>
         </table>
     </div>
@@ -78,30 +84,70 @@
             </tbody>
         </table>
     </div>
+
     <br>
-   
+    <div class="musicO">
+    <button id="controlMusica" class="musicP">
+        🎵 Activar música
+    </button>
+</div>
+
     <div class="botones-container">
+        <!-- Elimino los botones para Martes, Sábado, Domingo -->
         <div class="dia-container">
-            <button class="dia-boton" id="martes">Lunes</button>
-            <p class="camisa-texto" id="camisa-martes"><i class="fas fa-tshirt"></i></p>
-        </div>
-        <div class="dia-container">
-            <button class="dia-boton" id="jueves">Martes</button>
-            <p class="camisa-texto" id="camisa-jueves"><i class="fas fa-tshirt"></i></p>
-        </div>
-        <div class="dia-container">
-            <button class="dia-boton" id="sabado">Sábado</button>
-            <p class="camisa-texto" id="camisa-sabado"><i class="fas fa-tshirt"></i></p>
-        </div>
-        <div class="dia-container">
-            <button class="dia-boton" id="domingo">Domingo</button>
-            <p class="camisa-texto" id="camisa-domingo"><i class="fas fa-tshirt"></i></p>
+            <button class="dia-boton" id="uniforme">Uniforme</button>
         </div>
     </div>
 
+<!-- Modal -->
+
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="cerrarModal" class="close">&times;</span>
+      <h2 class="modal1">Detalles</h2>
+      <div id="modalTexto" class="modal-texto"></div>
+    </div>
+  </div>
+
+
+<!-- Contenedor del fondo oscuro -->
+<div class="fondo-modal-uniforme" id="fondoModalUniforme">
+    <!-- Modal principal -->
+    <div id="modalUniforme">
+      <!-- Botón cerrar dentro del modal -->
+      <span class="close-btn" id="cerrarModalUniforme">&times;</span>
+  
+      <h2>Uniforme por Día</h2>
+  
+      <div class="camisa-container">
+        <!-- Camisa Martes -->
+        <div class="camisa-dia" id="camisa-martes">
+          <i class="fas fa-tshirt camisa-blanca"></i>
+          <p>Martes: Camisa Blanca</p>
+        </div>
+  
+        <!-- Camisa Jueves -->
+        <div class="camisa-dia" id="camisa-jueves">
+          <i class="fas fa-tshirt camisa-azul"></i>
+          <p>Jueves: Camisa Azul</p>
+        </div>
+  
+        <!-- Camisa Sábado -->
+        <div class="camisa-dia" id="camisa-sabado">
+          <i class="fas fa-tshirt camisa-blanca"></i>
+          <p>Sábado: Camisa Blanca</p>
+        </div>
+  
+        <!-- Camisa Domingo -->
+        <div class="camisa-dia" id="camisa-domingo">
+          <i class="fas fa-tshirt camisa-azul"></i>
+          <p>Domingo: Camisa Azul</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
     <script src="Cronograma.js"></script>
-
-
 </body>
 </html>
-
