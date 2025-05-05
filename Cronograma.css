@@ -484,16 +484,14 @@ h1 {
         font-size: 20px;
         padding: 14px 24px;
     }
+
 }
+
+  
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-
-@media (max-width: 540px) {
-    .circle-image {
-        display: none;
-    }
     h1 {
         font-size: 1.2em;
     }
@@ -515,7 +513,7 @@ h1 {
     .date-range {
         font-size: 1em;
     }
-}
+
 
     h1 {
         font-size: 1.6em;
@@ -529,8 +527,17 @@ h1 {
         font-size: 18px;
         padding: 12px 20px;
     }
+
+    .musicO{
+        right: 18px;
+    }
+    
+    .dia-container {
+        right: 18px;
+    }
     
 }
+
 
 
 @media (min-width: 542px) and (max-width: 767px) {
@@ -543,16 +550,25 @@ h1 {
         padding: 10px 18px;
     }
 
+
+    .table-container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+
     table {
         width: 90%;
 
     }
+ 
+
     .musicO{
-        right: 0;
+        right: 12px;
     }
     
     .dia-container {
-        right: 0;
+        right: 12px;
     }
     
 }
@@ -572,9 +588,17 @@ h1 {
     }
 
     table {
-        width: 100%;
+        width: 90%;
         font-size: 0.9em;
     }
+
+    .table-container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      
+    
 
     th, td {
         padding: 10px;
@@ -583,15 +607,19 @@ h1 {
     .date-range {
         font-size: 1em;
     }
+ 
     .musicO{
-        right: 0;
+        right: 12px;
     }
     
     .dia-container {
-        right: 0;
+        right: 12px;
     }
+
     
 }
+
+
 
 
 
@@ -609,8 +637,15 @@ h1 {
         padding: 8px 14px;
     }
 
+    .table-container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+
     table {
         font-size: 0.85em;
+        width: 90%;
     }
 
     th, td {
@@ -622,11 +657,11 @@ h1 {
     }
 
 .musicO{
-    right: 0;
+    right: 12px;
 }
 
 .dia-container {
-    right: 0;
+    right: 12px;
 }
 
 }
