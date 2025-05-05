@@ -1,5 +1,66 @@
 
-  /* Video de fondo */
+.fondoDeCarga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+
+  .punto {
+    width: 14px;
+    height: 14px;
+    background-color: #5d2f8e;
+    border-radius: 50%;
+    animation: rebote 0.6s infinite ease-in-out;
+  }
+  
+
+  .punto:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .punto:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .punto:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+
+  @keyframes rebote {
+    0%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-12px);
+    }
+  }
+  
+
+  .mensajeDeCarga {
+    font-size: 1.2em;
+    color: #5d2f8e;
+  }
+  
+
+
+
   #videoFondo {
     position: fixed;
     top: 0;
@@ -10,7 +71,7 @@
     z-index: -1;
   }
   
-/* Estilos generales para el fondo */
+
 body {
     font-family: 'Georgia', serif;
     background-color: #f4f4f4;
@@ -20,8 +81,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;       /* Para asegurar que ocupe toda la pantalla */
-    overflow: hidden;    /* Evita desplazamientos innecesarios */
+    height: 100vh;       
+    overflow: hidden;   
 }
 
 
@@ -48,20 +109,20 @@ body {
 }
 
 
-/* Estilo para el video de fondo */
+
 #fondoVideo {
-    position: fixed; /* Fijar el video al fondo */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Asegura que el video cubra todo el espacio */
-    z-index: -1;        /* Coloca el video detrás del contenido */
+    object-fit: cover; 
+    z-index: -1;        
 }
 
 
 
-/* Estilos para la tabla */
+
 .table-container {
     width: 100%;
     display: flex;
@@ -89,7 +150,7 @@ th, td {
 }
 
 th {
-    background-color: #5d2f8e; /* Morado elegante */
+    background-color: #5d2f8e; 
     color: #ffffff;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -103,7 +164,7 @@ td {
 }
 
 table tr:nth-child(even) td {
-    background-color: #f1f1f1; /* Acento de color para filas pares */
+    background-color: #f1f1f1; 
 }
 
 table tr:nth-child(odd) td {
@@ -115,7 +176,7 @@ table tr:hover {
 }
 
 table tr:nth-child(1) {
-    background-color: #6c3483; /* Fila de encabezado con color diferente */
+    background-color: #6c3483;
     color: white;
 }
 
@@ -130,12 +191,12 @@ table tr:nth-child(3) {
 }
 
 table tr:hover {
-    background-color: #d5b5e8; /* Color suave de hover */
+    background-color: #d5b5e8; 
 }
 
-/* Estilos para el botón Uniforme */
+
 .uniforme-boton {
-    background-color: #4a148c; /* Morado profundo */
+    background-color: #4a148c; 
     color: white;
     border: none;
     padding: 12px 20px;
@@ -150,20 +211,20 @@ table tr:hover {
 }
 
 .uniforme-boton:hover {
-    background-color: #6a1b9a; /* Morado más claro en hover */
-    transform: scale(1.05); /* Agranda el botón ligeramente */
+    background-color: #6a1b9a; 
+    transform: scale(1.05); 
 }
 
 .uniforme-boton:active {
-    transform: scale(0.98); /* Reduce el tamaño del botón al hacer clic */
+    transform: scale(0.98); 
 }
 
 .uniforme-boton:focus {
-    outline: none; /* Remueve el borde al hacer clic */
-    box-shadow: 0 0 0 3px rgba(74, 20, 140, 0.5); /* Añade un contorno sutil */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 20, 140, 0.5); 
 }
 
-/* Estilos para el encabezado de la página */
+
 h1 {
     color: #e3e2e4;
     text-shadow: 2px 2px 4px rgba(148, 143, 143, 0.6);
@@ -171,7 +232,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilos adicionales si se necesitan en otros componentes */
+
 .date-range {
     font-size: 1.2em;
     color: #c5c5c5;
@@ -312,11 +373,11 @@ h1 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.6); 
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999; /* Debajo del modal pero encima del resto */
+    z-index: 999; 
   }
   
   #modalUniforme {
@@ -333,7 +394,7 @@ h1 {
 
 
 
-/* Eliminar clases innecesarias del contenedor interior */
+
 #modalUniforme .bg-white {
     background: transparent;
     padding: 0;
@@ -344,10 +405,10 @@ h1 {
     top: 10px;
     right: 15px;
     font-size: 30px;
-    color: #333; /* <- Cámbialo a oscuro para que se vea */
+    color: #333; 
     cursor: pointer;
     transition: color 0.3s ease;
-    z-index: 1001; /* Encima del contenido */
+    z-index: 1001; 
 }
 
 #modalUniforme .close-btn:hover {
@@ -355,7 +416,7 @@ h1 {
 }
 
 
-/* Contenido */
+
 #modalUniforme h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -363,7 +424,7 @@ h1 {
 
 .camisa-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas para alinear */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     justify-items: center;
     align-items: center;
@@ -374,7 +435,7 @@ h1 {
     font-size: 18px;
     padding: 15px;
     border-radius: 12px;
-    background-color: #ffffff; /* Cartas individuales para mayor claridad */
+    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
@@ -387,15 +448,15 @@ h1 {
     font-weight: bold;
 }
 
-/* Iconos de camisas */
+
 .fas.fa-tshirt {
     font-size: 80px;
 }
 
-/* Colores específicos */
+
 .camisa-blanca {
     color: #ffffff;
-    text-shadow: 0 0 3px #000; /* Resalta sobre fondo claro */
+    text-shadow: 0 0 3px #000; 
 }
 
 .camisa-azul {
@@ -407,9 +468,9 @@ h1 {
 
 
 
-/* Media Queries para Responsividad */
 
-/* Pantallas grandes (mayores a 1024px) */
+
+
 @media (min-width: 1025px) {
     h1 {
         font-size: 2em;
@@ -425,10 +486,10 @@ h1 {
     }
 }
 
-/* Pantallas medianas (de 768px a 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
-/* Pantallas muy pequeñas (menos de 542px) */
+
 @media (max-width: 540px) {
     .circle-image {
         display: none;
@@ -471,7 +532,7 @@ h1 {
     
 }
 
-/* Pantallas pequeñas (de 542px a 767px) */
+
 @media (min-width: 542px) and (max-width: 767px) {
     h1 {
         font-size: 1.4em;
@@ -496,7 +557,7 @@ h1 {
     
 }
 
-/* Pantallas muy pequeñas (menos de 542px) */
+
 @media (max-width: 540px) {
     .circle-image {
         display: none;
@@ -536,7 +597,7 @@ h1 {
 
 
 
-/* Pantallas ultra pequeñas (menos de 385px, dispositivos móviles muy pequeños) */
+
 @media (max-width: 385px) {
   
     h1 {

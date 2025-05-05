@@ -32,7 +32,7 @@ window.onload = function () {
     if (contenido) contenido.style.display = 'block';
   }
 
-  // Mostrar modal de uniforme
+
   if (botonUniforme && fondoModalUniforme && modalUniforme && cerrarModalUniforme) {
     botonUniforme.addEventListener('click', function () {
       fondoModalUniforme.style.display = "flex";
@@ -49,7 +49,7 @@ window.onload = function () {
     });
   }
 
-  // Control de audio
+ 
   const audio = new Audio("Dios esta aquí, tan cierto como el aire que respiro (HD).mp3");
   audio.loop = true;
   audio.currentTime = 0;
@@ -76,7 +76,7 @@ window.onload = function () {
     audio.currentTime = 0;
   });
 
-  // Modal para datos de tabla
+
   const nombresColumnas = ["Día", "Hermano 1", "Hermano 2", "Instructor", "Observaciones"];
   const filas = document.querySelectorAll('table tbody tr');
 
