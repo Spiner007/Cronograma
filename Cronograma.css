@@ -1213,18 +1213,31 @@ h1 {
         right: 12px;
     }
 
+  
     .camisa-container {
-       
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
       }
-
-      .camisa-dia p {
-        font-size: 0.8em;
-       
-        
-    }
     
-}
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
   
 
 @media (min-width: 375px) and (max-width: 815px) {
@@ -1263,19 +1276,29 @@ h1 {
     }
 
     .camisa-container {
-       
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
       }
-
-      .camisa-dia p {
-        font-size: 1em;
-       
-        
-    }
-      
     
-}
-
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
 
 
 @media (min-width: 386px) and (max-width: 540px) {
@@ -1314,14 +1337,29 @@ h1 {
     }
 
     .camisa-container {
-       
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
       }
-
-      
     
-}
-  
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
 
 
 
@@ -1347,13 +1385,31 @@ h1 {
     .musicO, .dia-container {
         right: 12px;
     }
+    
     .camisa-container {
-       
-        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
       }
     
-}
-  
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
 
 
 
@@ -1394,9 +1450,27 @@ h1 {
     }
 
     .camisa-container {
-       
-        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
       }
-  }
-
+    
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
 
