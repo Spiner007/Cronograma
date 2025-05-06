@@ -428,7 +428,7 @@ h1 {
     gap: 20px;
     justify-items: center;
     align-items: center;
-    padding: 25px;
+    padding: 50px;
 }
 
 .camisa-dia {
@@ -462,6 +462,8 @@ h1 {
 .camisa-azul {
     color: #84a5f2;
 }
+
+
 
 
 
@@ -512,10 +514,18 @@ h1 {
            
           }
           .camisa-container {
-          gap: 4px;
+          gap:2px;
           padding: 0;
         }
+
+        .camisa-dia p {
+            font-size: 0.8em;
+           
+            
+        }
+        
     }
+
 
    
 
@@ -553,7 +563,71 @@ h1 {
     .musicO, .dia-container {
         right: 12px;
     }
+
+    .camisa-container {
+       
+        padding: 15px;
+      }
+
+      .camisa-dia p {
+        font-size: 0.8em;
+       
+        
+    }
+    
 }
+  
+
+@media (min-width: 375px) and (max-width: 815px) {
+    .circle-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .uniforme-boton {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+
+    .camisa-container {
+       
+        padding: 5px;
+      }
+
+      .camisa-dia p {
+        font-size: 1em;
+       
+        
+    }
+      
+    
+}
+
+
 
 @media (min-width: 386px) and (max-width: 540px) {
     .circle-image {
@@ -589,10 +663,21 @@ h1 {
     .musicO, .dia-container {
         right: 12px;
     }
+
+    .camisa-container {
+       
+        padding: 15px;
+      }
+
+      
+    
 }
+  
 
 
-@media (min-width: 541px) and (max-width: 767px) {
+
+
+@media (min-width: 540px) and (max-width: 767px) {
     h1 {
         font-size: 1.4em;
     }
@@ -613,7 +698,19 @@ h1 {
     .musicO, .dia-container {
         right: 12px;
     }
+    .camisa-container {
+       
+        padding: 40px;
+      }
+    
 }
+  
+
+
+
+
+
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -646,4 +743,9 @@ h1 {
     .musicO, .dia-container {
         right: 18px;
     }
-}
+
+    .camisa-container {
+       
+        padding: 50px;
+      }
+  }
