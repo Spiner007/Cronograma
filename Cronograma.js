@@ -77,7 +77,7 @@ window.onload = function () {
   });
 
 
-  const nombresColumnas = ["Día", "Hermano 1", "Hermano 2", "Instructor", "Observaciones"];
+  const nombresColumnas = ["Día", "Hermano(a) 1", "Hermano(a) 2", "Instructor", "Observaciones"];
   const filas = document.querySelectorAll('table tbody tr');
 
   filas.forEach(fila => {
