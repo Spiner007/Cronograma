@@ -2,82 +2,88 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Cronograma de Recepción</title>
-  <link rel="stylesheet" href="Cronograma.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cronograma de Recepción</title>
+    <link rel="stylesheet" href="Cronograma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+   
+    <div id="fondoDeCarga" class="fondoDeCarga">
+        <div class="puntos">
+          <div class="punto"></div>
+          <div class="punto"></div>
+          <div class="punto"></div>
+        </div>
+        <p class="mensajeDeCarga">Cargando...</p>
+      </div>
+      
 
-  <div id="fondoDeCarga" class="fondoDeCarga">
-    <div class="puntos">
-      <div class="punto"></div>
-      <div class="punto"></div>
-      <div class="punto"></div>
-    </div>
-    <p class="mensajeDeCarga">Cargando...</p>
-  </div>
-
-  <video id="videoFondo" autoplay muted loop playsinline>
-    <source src="176198-855206384_medium.mp4" type="video/mp4" />
+   
+   <video id="videoFondo" autoplay muted loop playsinline>
+    <source src="176198-855206384_medium.mp4" type="video/mp4">
     Tu navegador no soporta video HTML5.
   </video>
+  
 
-  <div class="circle-image"></div>
 
-  <h1>Cronograma de Recepción</h1>
-  <p class="date-range">Válido desde el 20 de Mayo hasta el 25 de Mayo.</p>
+    <div class="circle-image"></div>
 
-  <div class="table-container">
-    <table role="table" aria-label="Cronograma de recepción semanal">
-      <thead>
-        <tr>
-          <th scope="col">Día</th>
-          <th scope="col">Hermano(a) 1</th>
-          <th scope="col">Hermano(a) 2</th>
+    <h1>Cronograma de Recepción</h1>
+    <p class="date-range">Válido desde el 20 de Mayo hasta el 25 de Mayo.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Hermano(a) 1</th>
+                    <th>Hermano(a) 2</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="row-1">
-                    <td scope="row">Martes</td>
+                    <td>Martes</td>
                     <td>Alejandra Avendaño</td>
                     <td>Brayan Chaverra</td>
                 </tr>
                 <tr class="row-2">
-                    <td scope="row">Jueves</td>
+                    <td>Jueves</td>
                     <td>David Castaño</td>
                     <td>Ana Areiza</td>
                 </tr>
                 <tr class="row-3">
-                    <td scope="row">Sábado</td>
+                    <td>Sábado</td>
                     <td>liliana Tuberquia</td>
                     <td>Yuli Arango</td>
                 </tr>
                 <tr class="row-4">
-                    <td scope="row">Domingo (mañana)</td>
+                    <td>Domingo (Mañana)</td>
                     <td>Wilson Arango</td>
                     <td>Juan Ladino</td>
+                </tr>
+                   <tr class="row-5">
+                    <td>Domingo (Tarde)</td>
+                    <td>David Álvarez</td>
+                    <td>Román Úsuga</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <br>
-   
-      <div class="apoyo-container">
-    <table role="table" aria-label="Tabla de apoyo para el domingo por la mañana">
-      <thead>
-        <tr class="apoyo-header">
-          <th scope="col">Día</th>
-          <th scope="col">Apoyo</th>
-        </tr>
-      </thead>
-
+    <div class="apoyo-container">
+        <table>
+            <thead>
+                <tr class="apoyo-header">
+                    <th colspan="2">Apoyo</th> 
+                </tr>
+            </thead>
             <tbody>
                 <tr class="apoyo-body">
-                    <td scope="row">Domingo (mañana)</td>
+                    <td>Domingo (Mañana)</td>
                     <td>Denis Agudelo</td>
                 </tr>
             </tbody>
@@ -127,14 +133,14 @@
   
       
         <div class="camisa-dia" id="camisa-jueves">
-          <i class="fas fa-tshirt camisa-azul"></i>
-          <p><strong>Jueves:</strong> Camisa Azul</p>
+          <i class="fas fa-tshirt camisa-blanca"></i>
+          <p><strong>Jueves:</strong> Camisa Blanca</p>
         </div>
   
      
         <div class="camisa-dia" id="camisa-sabado">
-          <i class="fas fa-tshirt camisa-azul"></i>
-          <p><strong>Sábado:</strong> camisa Azul</p>
+          <i class="fas fa-tshirt camisa-blanca"></i>
+          <p><strong>Sábado:</strong> camisa blanca</p>
         </div>
   
       
