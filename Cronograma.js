@@ -50,7 +50,7 @@ window.onload = function () {
   }
 
  
-  const audio = new Audio("Dios esta aquí, tan cierto como el aire que respiro (HD).mp3");
+  const audio = new Audio("Vamos a Adorar al Rey - Medley _ VIDEO OFICIAL _ Solangie Rodriguez-yt.savetube.me.mp3");
   audio.loop = true;
   audio.currentTime = 0;
 
