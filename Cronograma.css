@@ -200,34 +200,6 @@ table tr:hover {
 }
 
 
-.uniforme-boton {
-    background-color: #4a148c; 
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.uniforme-boton:hover {
-    background-color: #6a1b9a; 
-    transform: scale(1.05); 
-}
-
-.uniforme-boton:active {
-    transform: scale(0.98); 
-}
-
-.uniforme-boton:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(74, 20, 140, 0.5); 
-}
 
 
 h1 {
@@ -370,105 +342,6 @@ h1 {
 
   
 
-  .colorUniforme {
-    display: none;
-  }
-  
-  .fondo-modal-uniforme {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); 
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999; 
-  }
-  
-  #modalUniforme {
-    position: relative; 
-    background: #f0f0f0;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 500px;
-    width: 90%;
-    z-index: 1000;
-    text-align: center;
-  }
-
-
-
-
-#modalUniforme .bg-white {
-    background: transparent;
-    padding: 0;
-}
-
-#modalUniforme .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    color: #333; 
-    cursor: pointer;
-    transition: color 0.3s ease;
-    z-index: 1001; 
-}
-
-#modalUniforme .close-btn:hover {
-    color: red;
-}
-
-
-
-#modalUniforme h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.camisa-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    padding: 25px;
-}
-
-.camisa-dia {
-    font-size: 18px;
-    padding: 15px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.camisa-dia p {
-    margin-top: 10px;
-    
-}
-
-
-.fas.fa-tshirt {
-    font-size: 80px;
-}
-
-
-.camisa-blanca {
-    color: #ffffff;
-    text-shadow: 0 0 3px #000; 
-}
-
-.camisa-azul {
-    color: #84a5f2;
-}
 
 
 
@@ -511,17 +384,7 @@ h1 {
     .musicO, .dia-container {
         right: 10px;
     }
-        .fondo-modal-uniforme {
-            left:10px;
-            width: 94vw;
-            height: 100vh;
-
-           
-          }
-          .camisa-container {
-          gap: 4px;
-          padding: 0;
-        }
+    
     }
 
    
@@ -535,10 +398,6 @@ h1 {
         font-size: 1em;
     }
 
-    .uniforme-boton {
-        font-size: 11px;
-        padding: 8px 14px;
-    }
 
     .table-container {
         padding: 10px;
@@ -571,10 +430,7 @@ h1 {
         font-size: 1.2em;
     }
 
-    .uniforme-boton {
-        font-size: 13px;
-        padding: 10px 16px;
-    }
+    
 
     .table-container {
         padding: 10px;
@@ -604,10 +460,7 @@ h1 {
         font-size: 1.4em;
     }
 
-    .uniforme-boton {
-        font-size: 16px;
-        padding: 10px 18px;
-    }
+
 
     .table-container {
         padding: 10px;
@@ -628,10 +481,7 @@ h1 {
         font-size: 1.6em;
     }
 
-    .uniforme-boton {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
+   
 
     .table-container {
         padding: 10px;
@@ -1020,111 +870,6 @@ h1 {
 
   
 
-  .colorUniforme {
-    display: none;
-  }
-  
-  .fondo-modal-uniforme {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); 
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999; 
-  }
-  
-  #modalUniforme {
-    position: relative; 
-    background: #f0f0f0;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 500px;
-    width: 90%;
-    z-index: 1000;
-    text-align: center;
-  }
-
-
-
-
-#modalUniforme .bg-white {
-    background: transparent;
-    padding: 0;
-}
-
-#modalUniforme .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    color: #333; 
-    cursor: pointer;
-    transition: color 0.3s ease;
-    z-index: 1001; 
-}
-
-#modalUniforme .close-btn:hover {
-    color: red;
-}
-
-
-
-#modalUniforme h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.camisa-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    padding: 50px;
-}
-
-.camisa-dia {
-    font-size: 18px;
-    padding: 15px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.camisa-dia p {
-    margin-top: 10px;
-   
-    
-}
-
-
-.fas.fa-tshirt {
-    font-size: 80px;
-}
-
-
-.camisa-blanca {
-    color: #ffffff;
-    text-shadow: 0 0 3px #000; 
-}
-
-.camisa-azul {
-    color: #84a5f2;
-}
-
-
-
-
-
 
 
 
@@ -1137,11 +882,7 @@ h1 {
         font-size: 0.9em;
     }
 
-    .uniforme-boton {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-
+  
     .table-container {
         padding: 10px;
     }
@@ -1162,23 +903,7 @@ h1 {
     .musicO, .dia-container {
         right: 10px;
     }
-        .fondo-modal-uniforme {
-            left:10px;
-            width: 94vw;
-            height: 100vh;
-
-           
-          }
-          .camisa-container {
-          gap:2px;
-          padding: 0;
-        }
-
-        .camisa-dia p {
-            font-size: 0.8em;
-           
-            
-        }
+       
         
     }
 
@@ -1194,11 +919,7 @@ h1 {
         font-size: 1em;
     }
 
-    .uniforme-boton {
-        font-size: 11px;
-        padding: 8px 14px;
-    }
-
+   
     .table-container {
         padding: 10px;
     }
@@ -1221,29 +942,7 @@ h1 {
     }
 
   
-    .camisa-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 10px;
-      }
-    
-      .camisa-dia {
-        width: 90%;
-        max-width: 280px;
-        font-size: 1em;
-      }
-    
-      .camisa-dia p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        text-align: center;
-      }
-    
-      .fas.fa-tshirt {
-        font-size: 60px;
-      }
+  
     }
   
 
@@ -1256,11 +955,7 @@ h1 {
         font-size: 1.2em;
     }
 
-    .uniforme-boton {
-        font-size: 13px;
-        padding: 10px 16px;
-    }
-
+   
     .table-container {
         padding: 10px;
     }
@@ -1282,29 +977,7 @@ h1 {
         right: 12px;
     }
 
-    .camisa-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 10px;
-      }
     
-      .camisa-dia {
-        width: 90%;
-        max-width: 280px;
-        font-size: 1em;
-      }
-    
-      .camisa-dia p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        text-align: center;
-      }
-    
-      .fas.fa-tshirt {
-        font-size: 60px;
-      }
     }
 
 
@@ -1317,11 +990,7 @@ h1 {
         font-size: 1.2em;
     }
 
-    .uniforme-boton {
-        font-size: 13px;
-        padding: 10px 16px;
-    }
-
+   
     .table-container {
         padding: 10px;
     }
@@ -1343,29 +1012,7 @@ h1 {
         right: 12px;
     }
 
-    .camisa-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 10px;
-      }
     
-      .camisa-dia {
-        width: 90%;
-        max-width: 280px;
-        font-size: 1em;
-      }
-    
-      .camisa-dia p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        text-align: center;
-      }
-    
-      .fas.fa-tshirt {
-        font-size: 60px;
-      }
     }
 
 
@@ -1376,10 +1023,6 @@ h1 {
         font-size: 1.4em;
     }
 
-    .uniforme-boton {
-        font-size: 16px;
-        padding: 10px 18px;
-    }
 
     .table-container {
         padding: 10px;
@@ -1393,29 +1036,7 @@ h1 {
         right: 12px;
     }
     
-    .camisa-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 10px;
-      }
-    
-      .camisa-dia {
-        width: 90%;
-        max-width: 280px;
-        font-size: 1em;
-      }
-    
-      .camisa-dia p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        text-align: center;
-      }
-    
-      .fas.fa-tshirt {
-        font-size: 60px;
-      }
+   
     }
 
 
@@ -1430,11 +1051,7 @@ h1 {
         font-size: 1.6em;
     }
 
-    .uniforme-boton {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
-
+    
     .table-container {
         padding: 10px;
     }
@@ -1456,27 +1073,5 @@ h1 {
         right: 18px;
     }
 
-    .camisa-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 10px;
-      }
-    
-      .camisa-dia {
-        width: 90%;
-        max-width: 280px;
-        font-size: 1em;
-      }
-    
-      .camisa-dia p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        text-align: center;
-      }
-    
-      .fas.fa-tshirt {
-        font-size: 60px;
-      }
+ 
     }

@@ -33,21 +33,7 @@ window.onload = function () {
   }
 
 
-  if (botonUniforme && fondoModalUniforme && modalUniforme && cerrarModalUniforme) {
-    botonUniforme.addEventListener('click', function () {
-      fondoModalUniforme.style.display = "flex";
-    });
 
-    cerrarModalUniforme.onclick = () => {
-      fondoModalUniforme.style.display = "none";
-    };
-
-    window.addEventListener("click", function (event) {
-      if (event.target === fondoModalUniforme) {
-        fondoModalUniforme.style.display = "none";
-      }
-    });
-  }
 
  
   const audio = new Audio("dios.mp3");
