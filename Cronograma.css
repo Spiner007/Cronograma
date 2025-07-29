@@ -351,68 +351,372 @@ table tr:hover {
 }
 
 
-/* Animaciones */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
 }
 
-/* Media Queries */
+
 @media (orientation: landscape) {
     .circle-image {
         display: none;
     }
 }
 
-@media (max-width: 540px) {
+
+
+
+@media (max-width: 325px) {
     .circle-image {
         display: none;
     }
-    
     h1 {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
-    
-    .uniforme-boton, .musicC {
-        font-size: 14px;
-        padding: 10px 16px;
+
+    .uniforme-boton {
+        font-size: 10px;
+        padding: 6px 12px;
     }
-    
+
+    .table-container {
+        padding: 10px;
+    }
+
     table {
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .date-range {
+        font-size: 0.85em;
+    }
+
+    .musicO, .dia-container {
+        right: 10px;
+    }
+        .fondo-modal-uniforme {
+            left:10px;
+            width: 94vw;
+            height: 100vh;
+
+           
+          }
+          .camisa-container {
+          gap:2px;
+          padding: 0;
+        }
+
+        .camisa-dia p {
+            font-size: 0.8em;
+           
+            
+        }
+        
+    }
+
+
+   
+
+
+@media (min-width: 326px) and (max-width: 385px) {
+    .circle-image {
+        display: none;
+    }
+    h1 {
+        font-size: 1em;
+    }
+
+    .uniforme-boton {
+        font-size: 11px;
+        padding: 8px 14px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
         font-size: 0.8em;
     }
-    
+
     th, td {
         padding: 8px;
     }
-    
-    .camisa-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
+
+    .date-range {
+        font-size: 0.9em;
     }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+
+  
+    .camisa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+      }
     
-    .camisa-dia {
+      .camisa-dia {
         width: 90%;
         max-width: 280px;
-    }
+        font-size: 1em;
+      }
     
-    .fas.fa-tshirt {
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
         font-size: 60px;
+      }
     }
-}
+  
 
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 815px) {
+    .circle-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .uniforme-boton {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+
+    .camisa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+      }
+    
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
+
+
+@media (min-width: 386px) and (max-width: 540px) {
+    .circle-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .uniforme-boton {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+
+    .camisa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+      }
+    
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
+
+
+
+
+@media (min-width: 540px) and (max-width: 767px) {
     h1 {
         font-size: 1.4em;
     }
-    
-    table {
-        width: 95%;
-    }
-}
 
-@media (min-width: 769px) {
+    .uniforme-boton {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .musicO, .dia-container {
+        right: 12px;
+    }
+    
+    .camisa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+      }
+    
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .uniforme-boton {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
     table {
         width: 85%;
+        font-size: 0.95em;
     }
-}
+
+    th, td {
+        padding: 10px;
+    }
+
+    .date-range {
+        font-size: 1em;
+    }
+
+    .musicO, .dia-container {
+        right: 18px;
+    }
+
+    .camisa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+      }
+    
+      .camisa-dia {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1em;
+      }
+    
+      .camisa-dia p {
+        font-size: 0.9em;
+        margin-top: 8px;
+        text-align: center;
+      }
+    
+      .fas.fa-tshirt {
+        font-size: 60px;
+      }
+    }
+
+
