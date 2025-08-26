@@ -192,6 +192,7 @@ h1 {
 /* =================== MÚSICA =================== */
 .musicC, .musicP {
     background-color: #4a148c;
+    margin-right: 15px;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -268,18 +269,22 @@ h1 {
     table { width: 90%; font-size: 0.7em; }
     th, td { padding: 6px; }
     .date-range { font-size: 0.85em; }
+    .musicC, .musicP {margin-right: 20px;}
 }
+
 @media (min-width: 326px) and (max-width: 385px) {
     .circle-image { display: none; }
     h1 { font-size: 1em; }
     table { font-size: 0.8em; }
     .date-range { font-size: 0.9em; }
+     .musicC, .musicP {margin-right: 25px;}
 }
 @media (min-width: 386px) and (max-width: 540px) {
     .circle-image { display: none; }
     h1 { font-size: 1.2em; }
     table { font-size: 0.9em; }
     .date-range { font-size: 1em; }
+     .musicC, .musicP {margin-right: 25px;}
 }
 @media (min-width: 541px) and (max-width: 767px) {
     h1 { font-size: 1.4em; }
@@ -289,4 +294,5 @@ h1 {
     table { width: 85%; font-size: 0.95em; }
     th, td { padding: 10px; }
     .date-range { font-size: 1em; }
+     .musicC, .musicP {margin-right: 45px;}
 }
