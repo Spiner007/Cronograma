@@ -1,4 +1,4 @@
-
+/* =================== CARGA =================== */
 .fondoDeCarga {
     position: fixed;
     top: 0;
@@ -11,57 +11,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  .puntos {
+}
+
+.puntos {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin-bottom: 15px;
-  }
-  
+}
 
-  .punto {
+.punto {
     width: 14px;
     height: 14px;
     background-color: #5d2f8e;
     border-radius: 50%;
     animation: rebote 0.6s infinite ease-in-out;
-  }
-  
+}
 
-  .punto:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .punto:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .punto:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-  
+.punto:nth-child(1) { animation-delay: 0s; }
+.punto:nth-child(2) { animation-delay: 0.2s; }
+.punto:nth-child(3) { animation-delay: 0.4s; }
 
-  @keyframes rebote {
-    0%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-12px);
-    }
-  }
-  
+@keyframes rebote {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-12px); }
+}
 
-  .mensajeDeCarga {
+.mensajeDeCarga {
     font-size: 1.2em;
     color: #5d2f8e;
-  }
-  
+}
 
-
-
-  #videoFondo {
+/* =================== VIDEO Y CUERPO =================== */
+#videoFondo {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,8 +52,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-  }
-  
+}
 
 body {
     font-family: 'Georgia', serif;
@@ -81,11 +63,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;       
-    overflow: hidden;   
+    height: 100vh;
+    overflow: hidden;
 }
-
-
 
 .circle-image {
     position: absolute;
@@ -100,27 +80,11 @@ body {
     display: block;
 }
 
-
-
 @media (orientation: landscape) {
-    .circle-image {
-        display: none;
-    }
+    .circle-image { display: none; }
 }
 
-
-
-#fondoVideo {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1;        
-}
-
-
+/* =================== TABLAS =================== */
 .table-container {
     width: 100%;
     display: flex;
@@ -137,12 +101,12 @@ table {
     border-radius: 10px;
     overflow: hidden;
     font-family: 'Georgia', serif;
-    font-size: 0.90em; 
+    font-size: 0.95em;
 }
 
 th, td {
     border: 1px solid #e2e2e2;
-    padding: 6px 8px; 
+    padding: 10px;
     text-align: center;
     color: #4a4a4a;
 }
@@ -150,588 +114,50 @@ th, td {
 th {
     background-color: #5d2f8e;
     color: #ffffff;
-    font-size: 0.85em; 
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    padding: 8px;
+    padding: 12px;
 }
-
-
-
-
-
-
-
 
 td {
     background-color: #f9f9f9;
     cursor: pointer;
 }
 
-table tr:nth-child(even) td {
-    background-color: #f1f1f1; 
-}
+table tr:nth-child(even) td { background-color: #f1f1f1; }
+table tr:nth-child(odd) td { background-color: #ffffff; }
+table tr:hover { background-color: #e6e6e6; }
 
-table tr:nth-child(odd) td {
-    background-color: #ffffff;
-}
+/* Colores personalizados */
+table tr:nth-child(1) { background-color: #6c3483; color: white; }
+table tr:nth-child(2) { background-color: #9b59b6; color: white; }
+table tr:nth-child(3) { background-color: #8e44ad; color: white; }
+table tr:hover { background-color: #d5b5e8; }
 
-table tr:hover {
-    background-color: #e6e6e6;
-}
-
-table tr:nth-child(1) {
-    background-color: #6c3483;
-    color: white;
-}
-
-table tr:nth-child(2) {
-    background-color: #9b59b6;
-    color: white;
-}
-
-table tr:nth-child(3) {
-    background-color: #8e44ad;
-    color: white;
-}
-
-table tr:hover {
-    background-color: #d5b5e8; 
-}
-
-
-
-
-h1 {
-    color: #e3e2e4;
-    text-shadow: 2px 2px 4px rgba(148, 143, 143, 0.6);
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-
-.date-range {
-    font-size: 1.2em;
-    color: #c5c5c5;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.botones-containerX {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.dia-containerE {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
-    right: 10px;
-
-    
-}
-
-.dia-botonW {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding: 12px 25px;
-    font-size: 16px;
+/* =================== DIRECTIVA =================== */
+.directiva-row td {
+    background-color: #d7bde2 !important;
+    color: #4a235a !important;
     font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-   
-}
-
-.dia-boton:hover {
-    background-color: rgb(32, 36, 41);
-    color: white;
-}
-
-.musicE {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
-    right: 15px;
-}
-
-
-.musicC{
-    background-color: #4a148c;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    
-}
-
-
-.modal {
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal1 {
     text-align: center;
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    position: relative;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  .modal-texto {
-    white-space: pre-wrap;
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 8px;
-  }
-  
-  .mensaje-final {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #4a148c;
-  }
-
-
-  
-  
-  .close {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #999;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-  }
-
-  
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 325px) {
-    .circle-image {
-        display: none;
-    }
-    h1 {
-        font-size: 0.9em;
-    }
-
-    .uniforme-boton {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.7em;
-    }
-
-    th, td {
-        padding: 6px;
-    }
-
-    .date-range {
-        font-size: 0.85em;
-    }
-
-    .musicO, .dia-container {
-        right: 10px;
-    }
-    
-    }
-
-   
-
-
-@media (min-width: 326px) and (max-width: 385px) {
-    .circle-image {
-        display: none;
-    }
-    h1 {
-        font-size: 1em;
-    }
-
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.8em;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-
-    .date-range {
-        font-size: 0.9em;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-}
-
-@media (min-width: 386px) and (max-width: 540px) {
-    .circle-image {
-        display: none;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.9em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-}
-
-
-@media (min-width: 541px) and (max-width: 767px) {
-    h1 {
-        font-size: 1.4em;
-    }
-
-
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        font-size: 1.6em;
-    }
-
-   
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 85%;
-        font-size: 0.95em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .musicO, .dia-container {
-        right: 18px;
-    }
-}
-
-
-.fondoDeCarga {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .puntos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-
-  .punto {
-    width: 14px;
-    height: 14px;
-    background-color: #5d2f8e;
-    border-radius: 50%;
-    animation: rebote 0.6s infinite ease-in-out;
-  }
-  
-
-  .punto:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .punto:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .punto:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-  
-
-  @keyframes rebote {
-    0%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-12px);
-    }
-  }
-  
-
-  .mensajeDeCarga {
-    font-size: 1.2em;
-    color: #5d2f8e;
-  }
-  
-
-
-
-  #videoFondo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-
-body {
-    font-family: 'Georgia', serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;       
-    overflow: hidden;   
-}
-
-
-
-.circle-image {
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 160px;
-    height: 125px;
-    background-image: url('imagenes/Iglesia-Pentecostal-Unida-de-Colombia-Logo-Vector.svg-.png');
-    background-size: cover;
-    background-position: center;
-    display: block;
-}
-
-
-
-@media (orientation: landscape) {
-    .circle-image {
-        display: none;
-    }
-}
-
-
-
-#fondoVideo {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1;        
-}
-
-
-
-
-.table-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-}
-
-table {
-    width: 90%;
-    border-collapse: collapse;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: 'Georgia', serif;
-}
-
-th, td {
-    border: 1px solid #e2e2e2;
-    padding: 14px;
-    text-align: center;
-    font-size: 1em;
-    color: #4a4a4a;
-}
-
-th {
-    background-color: #5d2f8e; 
-    color: #ffffff;
-    font-size: 1.1em;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 16px;
-}
-
-td {
-    background-color: #f9f9f9;
-    cursor: pointer;
-}
-
-table tr:nth-child(even) td {
-    background-color: #f1f1f1; 
-}
-
-table tr:nth-child(odd) td {
-    background-color: #ffffff;
-}
-
-table tr:hover {
-    background-color: #e6e6e6;
-}
-
-table tr:nth-child(1) {
-    background-color: #6c3483;
-    color: white;
-}
-
-table tr:nth-child(2) {
-    background-color: #9b59b6;
-    color: white;
-}
-
-table tr:nth-child(3) {
-    background-color: #8e44ad;
-    color: white;
-}
-
-table tr:hover {
-    background-color: #d5b5e8; 
 }
 
 
-.uniforme-boton {
-    background-color: #4a148c; 
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    margin-top: 20px;
-}
+.directiva-row:hover td { background-color: #c39bd3 !important; }
 
-.uniforme-boton:hover {
-    background-color: #6a1b9a; 
-    transform: scale(1.05); 
-}
 
-.uniforme-boton:active {
-    transform: scale(0.98); 
-}
-
-.uniforme-boton:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(74, 20, 140, 0.5); 
+/* Excepción SOLO para la celda de Martes */
+.directiva-row .tamano_martes {
+    font-size: 0.9em;
+    font-weight: normal !important;
+    text-transform: none !important;
 }
 
 
+
+/* =================== TITULOS =================== */
 h1 {
     color: #000000;
     text-shadow: 2px 2px 4px rgba(148, 143, 143, 0.6);
@@ -739,58 +165,32 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 .date-range {
     font-size: 1.2em;
-    color: #000000;
+    color: #2b2222;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.884);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
 }
 
-.botones-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.dia-container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
-    right: 30px;
-}
-
-.dia-boton {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-    border: 2px solid #ffffff;
+/* =================== BOTONES =================== */
+.dia-boton, .dia-botonW {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
     padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-   
 }
-
-.dia-boton:hover {
+.dia-boton:hover, .dia-botonW:hover {
     background-color: rgb(32, 36, 41);
     color: white;
 }
 
-.musicO {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
-    right: 32px;
-}
-
-
-.musicP {
+/* =================== MÚSICA =================== */
+.musicC, .musicP {
     background-color: #4a148c;
     color: white;
     border: none;
@@ -801,10 +201,9 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    
 }
 
-
+/* =================== MODAL =================== */
 .modal {
     position: fixed;
     z-index: 999;
@@ -817,13 +216,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .modal1 {
-    text-align: center;
-  }
-  
-  .modal-content {
+.modal1 { text-align: center; }
+
+.modal-content {
     background-color: #fff;
     padding: 25px;
     border-radius: 12px;
@@ -832,246 +229,64 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     position: relative;
     animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  .modal-texto {
+}
+
+.modal-texto {
     white-space: pre-wrap;
     background-color: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
-  }
-  
-  .mensaje-final {
+}
+
+.mensaje-final {
     margin-top: 15px;
     font-weight: bold;
     color: #4a148c;
-  }
+}
 
-
-  
-  
-  .close {
+.close {
     position: absolute;
     right: 15px;
     top: 15px;
     font-size: 24px;
     cursor: pointer;
     color: #999;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  @keyframes fadeIn {
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
-  }
+}
 
-  
-
-
-
-
-
+/* =================== MEDIA QUERIES =================== */
 @media (max-width: 325px) {
-    .circle-image {
-        display: none;
-    }
-    h1 {
-        font-size: 0.9em;
-    }
-
-  
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.7em;
-    }
-
-    th, td {
-        padding: 6px;
-    }
-
-    .date-range {
-        font-size: 0.85em;
-    }
-
-    .musicO, .dia-container {
-        right: 10px;
-    }
-       
-        
-    }
-
-
-   
-
-
+    .circle-image { display: none; }
+    h1 { font-size: 0.9em; }
+    .table-container { padding: 10px; }
+    table { width: 90%; font-size: 0.7em; }
+    th, td { padding: 6px; }
+    .date-range { font-size: 0.85em; }
+}
 @media (min-width: 326px) and (max-width: 385px) {
-    .circle-image {
-        display: none;
-    }
-    h1 {
-        font-size: 1em;
-    }
-
-   
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.8em;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-
-    .date-range {
-        font-size: 0.9em;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-
-  
-  
-    }
-  
-
-@media (min-width: 375px) and (max-width: 815px) {
-    .circle-image {
-        display: none;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-   
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.8em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-
-    
-    }
-
-
+    .circle-image { display: none; }
+    h1 { font-size: 1em; }
+    table { font-size: 0.8em; }
+    .date-range { font-size: 0.9em; }
+}
 @media (min-width: 386px) and (max-width: 540px) {
-    .circle-image {
-        display: none;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-   
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-        font-size: 0.9em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-
-    
-    }
-
-
-
-
-@media (min-width: 540px) and (max-width: 767px) {
-    h1 {
-        font-size: 1.4em;
-    }
-
-
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 90%;
-    }
-
-    .musicO, .dia-container {
-        right: 12px;
-    }
-    
-   
-    }
-
-
-
-
-
-
-
-
+    .circle-image { display: none; }
+    h1 { font-size: 1.2em; }
+    table { font-size: 0.9em; }
+    .date-range { font-size: 1em; }
+}
+@media (min-width: 541px) and (max-width: 767px) {
+    h1 { font-size: 1.4em; }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        font-size: 1.6em;
-    }
-
-    
-    .table-container {
-        padding: 10px;
-    }
-
-    table {
-        width: 85%;
-        font-size: 0.95em;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .date-range {
-        font-size: 1em;
-    }
-
-    .musicO, .dia-container {
-        right: 18px;
-    }
-
- 
-    }
+    h1 { font-size: 1.6em; }
+    table { width: 85%; font-size: 0.95em; }
+    th, td { padding: 10px; }
+    .date-range { font-size: 1em; }
+}
